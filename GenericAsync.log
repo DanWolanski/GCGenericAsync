@@ -1,0 +1,136 @@
+15:20:26.472 [DEBUG]   XXX| Log file GenericAsync.log opened, Level=[ ALL ]
+15:20:26.472 [ENTRY]   XXX| Entering Main
+15:20:26.472 [ENTRY]   XXX| Entering AppInit
+15:20:26.472 [DEBUG]   XXX| Setting Random Number generator, seed=1029630156
+15:20:26.472 [DEBUG]   XXX| Setting to outbound mode, outbound address = 146.152.83.223
+15:20:26.472 [DEBUG]   XXX| Setting # channels to 1
+15:20:26.472 [EXIT ]   XXX| Exiting AppInit, function time=0
+15:20:26.472 [ENTRY]   XXX| Entering LibInit
+15:20:26.487 [ API ]   XXX| sr_setparm issued successfully
+15:20:26.487 [ API ]   XXX| Setting SRL mode to SR_MTASYNC / SR_SIGMODE
+15:20:26.597 [ API ]   XXX| sr_enbhdlr issued successfully
+15:20:26.597 [ API ]   XXX| Event hander ProcessEvt Enabled (EV_ANYDEV/EV_ANYEVT)
+15:20:26.597 [EXIT ]   XXX| Exiting LibInit, function time=125
+15:20:26.597 [ENTRY]   XXX| Entering enable_int_handers
+15:20:26.597 [EXIT ]   XXX| Exiting enable_int_handers, function time=0
+15:20:26.597 [ENTRY]   XXX| Entering OpenVox
+15:20:26.597 [ API ]   000| Opening, dx_open( dxxxB1C1 )
+15:20:26.643 [ API ]   000| dx_open() issued successfully
+15:20:26.643 [INFO ]   000| dxxxB1C1 Opened, voxh=1
+15:20:26.643 [INFO ]   000| Set recfile to dxxxB1C1.pcm
+15:20:26.643 [INFO ]   000| Setting event mask to turn on Digit CST evtents
+15:20:26.737 [ API ]   000| dx_setevtmsk(DM_DIGITS) issued successfully
+15:20:26.737 [ API ]   001| Opening, dx_open( dxxxB1C2 )
+15:20:26.753 [ API ]   001| dx_open() issued successfully
+15:20:26.753 [INFO ]   001| dxxxB1C2 Opened, voxh=2
+15:20:26.753 [INFO ]   001| Set recfile to dxxxB1C2.pcm
+15:20:26.753 [INFO ]   001| Setting event mask to turn on Digit CST evtents
+15:20:26.847 [ API ]   001| dx_setevtmsk(DM_DIGITS) issued successfully
+15:20:26.847 [ API ]   002| Opening, dx_open( dxxxB1C3 )
+15:20:26.862 [ API ]   002| dx_open() issued successfully
+15:20:26.862 [INFO ]   002| dxxxB1C3 Opened, voxh=3
+15:20:26.862 [INFO ]   002| Set recfile to dxxxB1C3.pcm
+15:20:26.862 [INFO ]   002| Setting event mask to turn on Digit CST evtents
+15:20:26.940 [ API ]   002| dx_setevtmsk(DM_DIGITS) issued successfully
+15:20:26.940 [EXIT ]   XXX| Exiting OpenVox, function time=344
+15:20:26.940 [ENTRY]   XXX| Entering OpenGC
+15:20:26.940 [DEBUG]   XXX| SIP PORT SET TO 5060
+15:20:26.940 [ API ]   XXX| Calling GC_START
+15:20:28.159 [ API ]   000| gc_Start issued successfully
+15:20:28.159 [ API ]   000| gc_util_insert issued successfully
+15:20:28.159 [ API ]   000| GCOpening device :P_SIP:N_iptB1T1:M_ipmB1C1
+15:20:28.456 [ENTRY]   XXX| Entering ProcessEvt
+15:20:28.456 [DEBUG]   000| GetIndexFromDevh(4)=0
+15:20:28.456 [ API ]   000| gc_GetMetaEvent issued successfully
+15:20:28.456 [EVENT]   000| CCEV_UNBLOCKED RECVD (0x833), evtlen=16 devh=4
+15:20:28.456 [ API ]   000| Putting channel in waitcall state (gc_Waitcall)
+15:20:28.456 [ENTRY]   XXX| Entering WaitCall
+15:20:28.456 [ API ]   000| gc_OpenEx issued successfully
+15:20:28.456 [ API ]   000| gc_Open Successful... :P_SIP:N_iptB1T1:M_ipmB1C1 is gch 4
+15:20:28.472 [ API ]   000| gc_GetResourceH issued successfully
+15:20:28.472 [ API ]   000| gc_GetResourceH... ipmB1C1 is ipmh 6
+15:20:28.472 [ API ]   000| gc_SetUserInfo()RFC2833) issued successfully
+15:20:28.472 [ API ]   000| gc_SetUserInfo(linedev=4) Success - DTMF mode is RFC2833
+15:20:28.472 [ API ]   001| GCOpening device :P_SIP:N_iptB1T2:M_ipmB1C2
+15:20:28.472 [ API ]   000| gc_WaitCall issued successfully
+15:20:28.487 [EXIT ]   XXX| Exiting WaitCall, function time=31
+15:20:28.487 [INFO ]   XXX| Time Spent inside CBhandler = 31mS 
+15:20:28.487 [EXIT ]   XXX| Exiting ProcessEvt, function time=31
+15:20:28.643 [ API ]   001| gc_OpenEx issued successfully
+15:20:28.643 [ API ]   001| gc_Open Successful... :P_SIP:N_iptB1T2:M_ipmB1C2 is gch 8
+15:20:28.643 [ API ]   001| gc_GetResourceH issued successfully
+15:20:28.643 [ API ]   001| gc_GetResourceH... ipmB1C2 is ipmh 9
+15:20:28.643 [ API ]   001| gc_SetUserInfo()RFC2833) issued successfully
+15:20:28.643 [ API ]   001| gc_SetUserInfo(linedev=8) Success - DTMF mode is RFC2833
+15:20:28.643 [ API ]   002| GCOpening device :P_SIP:N_iptB1T3:M_ipmB1C3
+15:20:28.643 [ENTRY]   XXX| Entering ProcessEvt
+15:20:28.643 [DEBUG]   001| GetIndexFromDevh(8)=1
+15:20:28.659 [ API ]   001| gc_GetMetaEvent issued successfully
+15:20:28.659 [EVENT]   001| CCEV_UNBLOCKED RECVD (0x833), evtlen=16 devh=8
+15:20:28.659 [ API ]   001| Putting channel in waitcall state (gc_Waitcall)
+15:20:28.659 [ENTRY]   XXX| Entering WaitCall
+15:20:28.659 [ API ]   001| gc_WaitCall issued successfully
+15:20:28.675 [EXIT ]   XXX| Exiting WaitCall, function time=16
+15:20:28.675 [INFO ]   XXX| Time Spent inside CBhandler = 31mS 
+15:20:28.675 [EXIT ]   XXX| Exiting ProcessEvt, function time=31
+15:20:28.862 [ENTRY]   XXX| Entering ProcessEvt
+15:20:28.862 [DEBUG]   002| GetIndexFromDevh(10)=2
+15:20:28.862 [ API ]   002| gc_GetMetaEvent issued successfully
+15:20:28.862 [EVENT]   002| CCEV_UNBLOCKED RECVD (0x833), evtlen=16 devh=10
+15:20:28.862 [ API ]   002| Putting channel in waitcall state (gc_Waitcall)
+15:20:28.862 [ENTRY]   XXX| Entering WaitCall
+15:20:28.862 [ API ]   002| gc_OpenEx issued successfully
+15:20:28.862 [ API ]   002| gc_Open Successful... :P_SIP:N_iptB1T3:M_ipmB1C3 is gch 10
+15:20:28.862 [ API ]   002| gc_GetResourceH issued successfully
+15:20:28.862 [ API ]   002| gc_GetResourceH... ipmB1C3 is ipmh 11
+15:20:28.878 [ API ]   002| gc_SetUserInfo()RFC2833) issued successfully
+15:20:28.878 [ API ]   002| gc_SetUserInfo(linedev=10) Success - DTMF mode is RFC2833
+15:20:28.878 [EXIT ]   XXX| Exiting OpenGC, function time=1937
+15:20:28.878 [INFO ]   XXX| *** Init done- Entering Wait loop  ***
+15:20:28.878 [INFO ]   XXX| *** press 'q' to exit... ***
+15:20:28.878 [     ]   XXX| Init finished, Starting Test!
+15:20:28.878 [ API ]   XXX| sr_putevt(EV_STARTTEST) issued successfully
+15:20:28.878 [ API ]   002| gc_WaitCall issued successfully
+15:20:28.878 [EXIT ]   XXX| Exiting WaitCall, function time=16
+15:20:28.878 [INFO ]   XXX| Time Spent inside CBhandler = 16mS 
+15:20:28.893 [EXIT ]   XXX| Exiting ProcessEvt, function time=32
+15:20:28.893 [ENTRY]   XXX| Entering ProcessEvt
+15:20:28.893 [DEBUG]   003| GetIndexFromDevh(0)=NOINDEX
+15:20:28.893 [ API ]   XXX| gc_GetMetaEvent issued successfully
+15:20:28.893 [EVENT]   XXX| --Unknown Event RECVD (0x7777), evtlen=0 (masked=0) devh=0
+15:20:28.893 [EVENT]   XXX| USREV_STARTTEST RECVD, devh=0, evttype=30583(0x7777)
+15:20:28.893 [ENTRY]   XXX| Entering StartTest
+15:20:28.893 [ENTRY]   XXX| Entering MakeCall
+15:20:28.893 [ API ]   000| Setting Codecs to G.711U 20ms
+15:20:28.893 [ API ]   000| gc_uitil_insert_parm_ref(IP_CAP) issued successfully
+15:20:28.909 [ API ]   000| gc_uitil_insert_parm_ref(IP_CAP2) issued successfully
+15:20:28.909 [ API ]   000| gc_SetUserInfo issued successfully
+15:20:28.909 [ API ]   000|  Calling 146.152.83.223
+15:20:28.925 [ API ]   000| gc_MakeCall issued successfully
+15:20:28.925 [EXIT ]   XXX| Exiting MakeCall, function time=31
+15:20:28.925 [ENTRY]   XXX| Entering MakeCall
+15:20:28.925 [ API ]   001| Setting Codecs to G.711U 20ms
+15:20:28.925 [ API ]   001| gc_uitil_insert_parm_ref(IP_CAP) issued successfully
+15:20:28.940 [ API ]   001| gc_uitil_insert_parm_ref(IP_CAP2) issued successfully
+15:20:28.940 [ API ]   001| gc_SetUserInfo issued successfully
+15:20:28.940 [ API ]   001|  Calling 146.152.83.223
+15:20:28.940 [ API ]   001| gc_MakeCall issued successfully
+15:20:28.956 [EXIT ]   XXX| Exiting MakeCall, function time=31
+15:20:28.956 [ENTRY]   XXX| Entering MakeCall
+15:20:28.956 [ API ]   002| Setting Codecs to G.711U 20ms
+15:20:28.956 [ API ]   002| gc_uitil_insert_parm_ref(IP_CAP) issued successfully
+15:20:28.956 [ API ]   002| gc_uitil_insert_parm_ref(IP_CAP2) issued successfully
+15:20:28.956 [ API ]   002| gc_SetUserInfo issued successfully
+15:20:28.956 [ API ]   002|  Calling 146.152.83.223
+15:20:28.972 [ API ]   002| gc_MakeCall issued successfully
+15:20:28.972 [EXIT ]   XXX| Exiting MakeCall, function time=16
+15:20:28.972 [EXIT ]   XXX| Exiting StartTest, function time=78
+15:20:28.972 [INFO ]   XXX| Time Spent inside CBhandler = 78mS 
+15:20:28.972 [EXIT ]   XXX| Exiting ProcessEvt, function time=78
+15:21:06.409 [ENTRY]   XXX| Entering ProcessKey
+15:21:06.425 [EXIT ]   XXX| Exiting ProcessKey, function time=16
+15:21:06.425 [ENTRY]   XXX| Entering AppExit
+15:21:06.425 [     ]   XXX| Application Exiting....
+15:21:06.425 [ API ]   000| Closing VOX Device, dx_close( dxxxB1C1 )
+15:21:06.425 [     ]   XXX| All Cleanup Done, exiting in 2 seconds
+15:21:08.425 [DEBUG]   XXX| Closing log file GenericAsync.log

@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GenericAsync - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP868.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/GenericAsync.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\Desktop\GCGenericAsync\GenericAsync.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP868.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP869.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libdxxmt.lib libsrlmt.lib libgc.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/GenericAsync.pdb" /debug /machine:I386 /out:"Debug/GenericAsync.exe" /pdbtype:sept 
+".\Debug\GenericAsync.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP869.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenericAsync.cpp
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(157) : warning C4101: 'index' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(235) : warning C4101: 'loglevel' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(865) : warning C4101: 'pOpenResult' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(863) : warning C4101: 'pInfo' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(869) : warning C4101: 'tmpstr' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(864) : warning C4101: 'hParty' : unreferenced local variable
+c:\documents and settings\administrator\desktop\gcgenericasync\genericasync.cpp(1023) : warning C4101: 'dest' : unreferenced local variable
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/GenericAsync.bsc"  ".\Debug\GenericAsync.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+GenericAsync.exe - 0 error(s), 7 warning(s)
+</pre>
+</body>
+</html>
